@@ -15,7 +15,6 @@ Clone, and run `make`.
 Launch a python shell:
 
 ```python
->>>
 >>> import mylib
 >>>
 >>> mylib.foo(4, 8)
@@ -23,6 +22,12 @@ Launch a python shell:
 >>>
 >>> mylib.bar(7, 9)
 (7, 9)
+>>>
+>>> mylib.print_stuff("ryan", "dash", 7, 3.14)
+ryan
+dash
+7
+3.14
 >>>
 ```
 

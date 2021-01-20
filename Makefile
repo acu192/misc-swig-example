@@ -16,7 +16,7 @@ $(OBJ_DIR)/%.o : $(SRC_DIR)/%.cpp
 		-I /usr/include/python3.7 \
 		-fPIC
 
-$(SRC_DIR)/$(ENTRYPOINT)_wrap.cpp : $(SRC_DIR)/$(ENTRYPOINT).i
+$(SRC_DIR)/$(ENTRYPOINT)_wrap.cpp : $(SRC_DIR)/$(ENTRYPOINT).i $(SRC_DIR)/$(ENTRYPOINT).h
 	swig -python -c++ -outdir . -o $@ $<
 
 clean :
